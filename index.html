@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<img src="images/logo.svg" alt="">
+
+<form  class="main-box">
+  <div class="left">
+<!-- bill box -->
+    <div class="bill-box">
+<label for="label-1">Bill</label>
+<div class="bill-input">
+  <img src="images/icon-dollar.svg" alt="">
+  <input type="number" name="label-1" id="bill">
+</div>
+    </div>
+<!-- percentages -->
+    <div class="percentages-box">
+      <label>Select Tip %</label>
+    <div class="percentages">
+      <button type="button"  class="percentage">5%</button>
+      <button type="button" class="percentage">10%</button>
+      <button type="button" class="percentage">15%</button>
+      <button type="button" class="percentage">20%</button>
+      <button type="button" class="percentage">25%</button>
+      <input placeholder="Custom" type="number" id="custom">
+    </div>
+    </div>
+<!--number of people -->
+    <div class="numberofpeople">
+<div class="head" >
+  <label for="NOP">Number of People</label>
+<span class="error"></span>
+</div>
+<div class="input-nop">
+  <img src="images/icon-person.svg" alt="">
+  <input type="number" id="numofp" name="nop">
+</div>
+    </div>
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </div>
+  <div class="right">
+ <div class="right-child">
+  <div class="totalamount-box">
+    <div class="child-one">
+       <p>Tip Amount</p>
+      <p>/ person</p>
+    </div>
+    <span class="tipamount">$0.00</span>
+  </div>
+  
+  <div class="total-box">
+    <div class="child-one">
+      <p>Total</p>
+      <p>/ person</p>
+    </div>
+    <p class="total">$0.00</p>
+  </div>
+ </div>
+    
+      <button id="reset" type="reset">Reset</button>
+  </div>
+</form>
+
+
+
+  
+<script src="javas.js"></script>
+</body>
+</html>
